@@ -1,0 +1,52 @@
+/* Styling Latar Belakang & Tata Letak Halaman */
+body {
+    background-color: #b2e2e8; /* Warna latar belakang mirip gambar Anda */
+    font-family: Arial, Helvetica, sans-serif; /* 1. PROPERTI FONT-FAMILY */
+    margin: 40px;               /* 2. PROPERTI MARGIN (jarak luar elemen body) */
+    padding: 0;                 /* 3. PROPERTI PADDING */
+}
+
+/* Styling Kotak Pembungkus (Card) */
+.card {
+    background-color: #ffffff; /* Warna background kotak */
+    border: 2px solid #0056b3; /* 4. PROPERTI BORDER (garis tepi kotak) */
+    padding: 24px;              /* 3. PROPERTI PADDING (jarak dalam isi ke garis tepi) */
+    margin: 20px auto;          /* 2. PROPERTI MARGIN (jarak luar & membuat posisi di tengah) */
+    max-width: 700px;
+    border-radius: 8px;         /* Sudut melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling Judul (h1) */
+h1 {
+    color: #0000ff;             /* 5. PROPERTI COLOR (warna teks judul) */
+    font-size: 32px;            /* 6. PROPERTI FONT-SIZE (ukuran teks judul) */
+    margin-top: 0;              /* 2. PROPERTI MARGIN */
+    margin-bottom: 16px;        /* 2. PROPERTI MARGIN */
+}
+
+/* Styling Paragraf (p) */
+p {
+    color: #333333;             /* 5. PROPERTI COLOR (warna teks paragraf) */
+    font-size: 16px;            /* 6. PROPERTI FONT-SIZE (ukuran teks paragraf) */
+    line-height: 1.6;           /* Jarak antar baris kalimat */
+    margin-bottom: 24px;        /* 2. PROPERTI MARGIN */
+}
+
+/* Styling Tombol (btn) */
+.btn {
+    color: #ffffff;             /* 5. PROPERTI COLOR (warna teks tombol) */
+    background-color: #0056b3;  /* Warna background tombol */
+    font-size: 14px;            /* 6. PROPERTI FONT-SIZE */
+    font-family: Arial, sans-serif; /* 1. PROPERTI FONT-FAMILY */
+    border: 1px solid #003d80;  /* 4. PROPERTI BORDER */
+    padding: 10px 20px;         /* 3. PROPERTI PADDING (ruang di dalam tombol) */
+    margin-top: 8px;            /* 2. PROPERTI MARGIN */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Efek saat kursor diarahkan ke tombol */
+.btn:hover {
+    background-color: #003d80;
+}

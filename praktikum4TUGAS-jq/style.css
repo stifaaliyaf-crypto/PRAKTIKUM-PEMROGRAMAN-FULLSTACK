@@ -1,0 +1,187 @@
+/* Reset & Base Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f9;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Section - Gradient Biru Modern */
+.header {
+    background: linear-gradient(135deg, #003366, #0066cc, #3385ff);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.profile-avatar {
+    margin-bottom: 15px;
+}
+
+.profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.badge {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #00bfff;
+    color: #002b4d;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Container & Grid Layout */
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Card Component */
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-left: 5px solid #0056b3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 16px rgba(0, 86, 179, 0.15);
+}
+
+.card h2 {
+    color: #003366;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Control Panel & Buttons */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: #0056b3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #003d80;
+}
+
+/* Lists & Badges */
+.bio-list {
+    list-style: none;
+}
+
+.bio-list li {
+    padding: 8px 0;
+    border-bottom: 1fr solid #eee;
+}
+
+.bio-list li:last-child {
+    border-bottom: none;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-tag {
+    background-color: #e6f0fa;
+    color: #0056b3;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #b3d1ff;
+    transition: all 0.2s ease;
+}
+
+.project-item {
+    background-color: #f8faff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border-left: 3px solid #3385ff;
+}
+
+.project-item h3 {
+    font-size: 1.05rem;
+    color: #004080;
+}
+
+/* Status Notification Box */
+.status-box {
+    background-color: #d9ecff;
+    color: #004085;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid #b8daff;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666666;
+    font-size: 0.85rem;
+    margin-top: 30px;
+}

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+
+    <!-- Memanggil Bootstrap CSS yang sudah didownload sesuaikan dengan nm folderny agar bs berjln -->
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css"></head>
+<body class="bg-light">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- membuat menu navigasi>-->
+        <div class="container"> <!--mengatur lebar n posisi konten-->
+            <a class="navbar-brand" href="#home">Portofolio Saya</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu"> <!-- Mengatur menu yang bisa dibuka dan ditutup, menu di tampil atau disembunyikan -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Proyek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id="home" class="bg-dark text-white text-center py-5">
+        <div class="container">
+            <img src="img/stifa.jpg"
+                alt="Foto Profil"
+                class="rounded-circle object-fit-cover mb-3"
+                width="200" height="200"> <!--lebar n tinggi-->
+
+            <h1>Halo, Saya Stifa Aliya Fauziyyah!</h1>
+            <p class="lead">Mahasiswa Teknologi Informasi</p>
+
+            <a href="#projects" class="btn btn-primary"> <!-- Membuat tombol -->
+                Lihat Proyek Saya
+            </a>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="about" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 text-center">
+                <h2>Tentang Saya</h2>
+                <p>
+                    Halo! Saya adalah mahasiswa Teknologi Informasi semester 3
+                    yang sedang tertarik dengan pemrograman dan
+                    pengembangan website.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYEK -->
+    <section id="projects" class="container py-5">
+        <h2 class="text-center mb-4">Proyek Saya</h2>
+
+        <div class="row g-4"> <!--mengatur susunan kolom proyek-->
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm"> <!-- membuat krtu informasi -->
+                    <div class="card-body">
+                        <h5 class="card-title">Website Portofolio</h5>
+                        <p class="card-text">
+                            Website pribadi menggunakan HTML
+                            dan Bootstrap.
+                        </p>
+                        <a href="#home" class="btn btn-primary">
+                            Lihat Proyek
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Proyek Database</h5>
+                        <p class="card-text">
+                            Membuat dan mengelola database
+                            menggunakan SQL.
+                        </p>
+                        <a href="#projects" class="btn btn-primary">
+                            Lihat Proyek
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4"> <!--Mengatur kolom agar responsif-->
+                <div class="card h-100 shadow-sm"> <!--Membuat kartu informasi proyek-->
+                    <div class="card-body">
+                        <h5 class="card-title">Desain Website</h5>
+                        <p class="card-text">
+                            Membuat tampilan website yang
+                            menarik dan responsif.
+                        </p>
+                        <a href="#projects" class="btn btn-primary">
+                            Lihat Proyek
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact" class="container text-center py-5"> <!--py 5 utk Memberikan jarak vertikal-->
+        <h2 class="fw-bold mb-3">Kontak Saya</h2>
+    <p class="text-secondary">
+        Hubungi Alamat Email Berikut
+    </p>
+    
+        <a href="stifaaliyaf@gmail.com" class="btn btn-dark">
+            Kirim Email
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">&copy; 2026 Portofolio Saya</p>
+    </footer>
+
+    <!-- Memanggil Bootstrap JavaScript lokal -->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

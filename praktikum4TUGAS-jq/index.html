@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Mahasiswa - Stifa Aliya</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Memanggil library jQuery lokal -->
+     <script src="jquery-4.0.0.min.js"></script>
+    <!-- Memanggil script jQuery eksternal -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="header">
+        <div class="profile-avatar">
+            <img src="https://via.placeholder.com/130/0056b3/ffffff?text=Mhs" alt="Foto Profil" id="avatarImg">
+        </div>
+        <h1 id="namaMahasiswa">Stifa Aliya Fauziyyah</h1>
+        <p id="prodiInfo">Program Studi Teknologi Informasi - Universitas 'Aisyiyah Yogyakarta</p>
+        <span class="badge" id="statusBadge">Mahasiswa Aktif</span>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Panel Kontrol Interaktif (Menguji Metode jQuery) -->
+        <section class="card control-panel">
+            <h2><span class="icon">⚙️</span> Panel Kontrol Interaktif</h2>
+            <p>Gunakan tombol-tombol di bawah untuk menguji interaksi jQuery pada halaman:</p>
+            
+            <div class="button-group">
+                <button id="btnGantiTema">Ganti Warna Mode</button>
+                <button id="btnToggleBio">Sembunyikan / Tampilkan Biodata</button>
+                <button id="btnFadeKeahlian">Fade Keahlian</button>
+                <button id="btnSlidePortofolio">Slide Portofolio</button>
+                <button id="btnAnimateAvatar">Animasi Foto Profil</button>
+            </div>
+        </section>
+
+        <!-- Grid Layout Utama -->
+        <div class="content-grid">
+            
+            <!-- Kartu Biodata Ringkas -->
+            <section class="card" id="cardBiodata">
+                <h2><span class="icon">👤</span> Biodata Diri</h2>
+                <ul class="bio-list">
+                    <li><strong>NIM:</strong> 2511501049</li>
+                    <li><strong>Fakultas:</strong> Sains dan Teknologi</li>
+                    <li><strong>Semester:</strong> 3 (Tiga)</li>
+                    <li><strong>Email:</strong> stifa@example.ac.id</li>
+                    <li><strong>Minat Fokus:</strong> Web Development & Cyber Security</li>
+                </ul>
+            </section>
+
+            <!-- Kartu Keahlian (Skills) -->
+            <section class="card" id="cardKeahlian">
+                <h2><span class="icon">💻</span> Keahlian & Minat</h2>
+                <div class="skills-container">
+                    <span class="skill-tag">HTML5 & CSS3</span>
+                    <span class="skill-tag">JavaScript & jQuery</span>
+                    <span class="skill-tag">Database SQL</span>
+                    <span class="skill-tag">Java Swing</span>
+                    <span class="skill-tag">Digital Forensics</span>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Kartu Portofolio / Proyek -->
+        <section class="card" id="cardPortofolio">
+            <h2><span class="icon">🚀</span> Proyek Terbaru</h2>
+            <div class="project-list" id="projectContent">
+                <div class="project-item">
+                    <h3>1. Sistem Database HealthOne</h3>
+                    <p>Perancangan ERD dan Normalisasi 3NF untuk manajemen data medis dan resep.</p>
+                </div>
+                <div class="project-item">
+                    <h3>2. Aplikasi GUI Java Form Dokter</h3>
+                    <p>Integrasi Java Swing dengan database MySQL menggunakan JDBC.</p>
+                </div>
+                <div class="project-item">
+                    <h3>3. Analisis Digital Forensics</h3>
+                    <p>Pemeriksaan disk image (.dd) dan analisis byte offset menggunakan Autopsy dan HxD.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pesan Status / Notifikasi -->
+        <div id="statusBox" class="status-box">
+            Pesan status interaksi akan muncul di sini.
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Profil Mahasiswa - Dibuat dengan HTML, CSS, dan jQuery</p>
+    </footer>
+
+</body>
+</html>
