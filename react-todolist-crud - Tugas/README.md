@@ -1,16 +1,13 @@
-# React + Vite
+# Aplikasi TodoList CRUD React 19
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Aplikasi web TodoList interaktif yang dibangun menggunakan React 19, Vite, dan React-Bootstrap untuk memenuhi tugas praktikum.
 
-Currently, two official plugins are available:
+## Fitur Utama
+- Create, Read, Update, Delete (CRUD) tugas harian secara dinamis.
+- Badge warna prioritas (High, Medium, Low).
+- Indikator status (To Do, In Progress, Done) interaktif yang dapat diklik.
+- Fitur pencarian tugas dan filter berdasarkan status.
+- Pencatatan waktu pembuatan tugas (*timestamp*).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Tampilan Antarmuka (Screenshot)
+![Tampilan Aplikasi TodoList](./screenshot.png)
